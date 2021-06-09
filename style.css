@@ -1,0 +1,176 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  color: #8486a9;
+}
+
+.header {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1f29), to(#343650));
+  background: linear-gradient(#1e1f29, #343650);
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7em;
+  position: relative;
+  background: url("./images/bg-stars.svg");
+}
+
+.title {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cards--section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4em;
+}
+
+.cards--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card--number--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  width: 8.5em;
+  height: 8.5em;
+  background-color: #343650;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 10px 5px black;
+          box-shadow: 0 10px 5px black;
+  position: relative;
+  overflow: hidden;
+}
+
+.card--number--container::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: -7.5px;
+}
+
+.card--number--container::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  right: -7.5px;
+}
+
+.card--number {
+  color: #fb6087;
+  font-size: 4rem;
+}
+
+.card--subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 0.8em;
+}
+
+.social--container {
+  width: 100%;
+  height: 100%;
+  padding-top: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3em;
+}
+
+.social--container img {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.fab {
+  position: relative;
+  top: 2em;
+  z-index: 1;
+  font-size: 2rem;
+  color: #8486a9;
+}
+
+.fab:hover {
+  color: #fb6087;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
