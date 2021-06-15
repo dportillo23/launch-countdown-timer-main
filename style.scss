@@ -41,6 +41,8 @@ body {
     color: #fff;
 }
 
+// Cards Secition
+
 .cards--section {
     display: flex;
     gap: 4em;
@@ -66,6 +68,13 @@ body {
     box-shadow: 0 10px 5px black;
     position: relative;
     overflow: hidden;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+
+    &.flipped {
+        transform: rotateX(180deg);
+    }
 
     &::before {
         content: '';
@@ -99,6 +108,8 @@ body {
     font-size: 0.8em;
 }
 
+// Social media section
+
 .social--container {
     width: 100%;
     height: 100%;
@@ -130,8 +141,11 @@ body {
     }
 }
 
+// Footer
+
 .attribution { 
-    font-size: 11px; text-align: center; 
+    padding: 1.5em;
+    font-size: 12px; text-align: center; 
     a {
         color: hsl(228, 45%, 44%);
     }

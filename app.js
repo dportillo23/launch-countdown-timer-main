@@ -5,6 +5,15 @@ const days = document.getElementById("days");
 const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
+const daysContainer = document.querySelector(".days")
+const hoursContainer = document.querySelector(".hours")
+const minutesContainer = document.querySelector(".minutes")
+const secondsContainer = document.querySelector(".seconds")
+
+
+function flipCard(card) {
+    card.classList.toggle("flipped");
+}
 
 // Functions
 
@@ -18,6 +27,7 @@ function addLeadingZero(num){
     }
     return num
 }
+
 
 
 //  Interval to make the countdown
@@ -45,6 +55,8 @@ days.innerHTML = leftTime.d;
 hours.innerHTML = leftTime.h;
 minutes.innerHTML = leftTime.m;
 seconds.innerHTML = leftTime.s;
+
+flipCard(secondsContainer);
 
 console.log(leftTime)
 
