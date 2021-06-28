@@ -4,8 +4,6 @@ const minutes = seconds * 60;
 const hours = minutes * 60;
 const days = hours * 24;
 
-
-
 //  Timer elements
 const timeDays = document.getElementById("days");
 const timeHours = document.getElementById("hours");
@@ -17,8 +15,6 @@ const daysContainer = document.querySelector(".days");
 const hoursContainer = document.querySelector(".hours");
 const minutesContainer = document.querySelector(".minutes");
 const secondsContainer = document.querySelector(".seconds");
-
-
 
 
 // Functions
@@ -81,7 +77,6 @@ setInterval(() => {
 
 
     //  Change numbers in HTML
-    secondsContainer.setAttribute("data-value", leftTime.s[0])
     timeDays.innerHTML = leftTime.d[0];
     timeHours.innerHTML = leftTime.h[0];
     timeMinutes.innerHTML = leftTime.m[0];
