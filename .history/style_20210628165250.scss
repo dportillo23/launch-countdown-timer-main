@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
 }
@@ -63,37 +61,38 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    width: 2.25em;
-    height: 2.25em;
+    width: 8.5em;
+    height: 8.5em;
     background-color: $col-dark;
-    border-radius: 10px;
+    border-radius: 1em;
     box-shadow: 0 10px 5px black;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease;
     backface-visibility: hidden;
     transform: rotateX(0deg);
-    color: $col-red;
-    font-size: 4rem;
 
     &::before {
-        content: attr(data-value);
-        width: 100%;
-        height: 100%;
-        color: red;
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: black;
         position: absolute;
+        left: -7.5px;
+        color: $col-red;
+        font-size: 4rem;
     }
 
-    // &::after {
-    //     content: attr(data-value);
-    //     width: 100%;
-    //     height: 100%;
-    //     color: blue;
-    //     position: absolute;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    &::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+        right: -7.5px;
+    }
 }
 
 .card--subtitle {
@@ -116,10 +115,10 @@ body {
 
     img {
         width: 100%;
-
+        
         position: absolute;
         z-index: 0;
-        bottom: 0;
+        bottom: 0;        
     }
 }
 
@@ -128,7 +127,7 @@ body {
     top: 2em;
     z-index: 1;
     font-size: 2rem;
-    color: $col-ppal;
+    color:$col-ppal;
 
     &:hover {
         color: $col-red;
@@ -137,11 +136,9 @@ body {
 
 // Footer
 
-.attribution {
+.attribution { 
     padding: 1.5em;
-    font-size: 12px;
-    text-align: center;
-
+    font-size: 12px; text-align: center; 
     a {
         color: hsl(228, 45%, 44%);
     }

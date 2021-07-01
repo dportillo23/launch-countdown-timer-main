@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -89,10 +91,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
-  width: 8.5em;
-  height: 8.5em;
+  width: 2.25em;
+  height: 2.25em;
   background-color: #343650;
-  border-radius: 1em;
+  border-radius: 10px;
   -webkit-box-shadow: 0 10px 5px black;
           box-shadow: 0 10px 5px black;
   position: relative;
@@ -103,36 +105,16 @@ body {
           backface-visibility: hidden;
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg);
-}
-
-.card--number--container.flipped {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  color: #fb6087;
+  font-size: 4rem;
 }
 
 .card--number--container::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: black;
+  content: attr(data-value);
+  width: 100%;
+  height: 100%;
+  color: red;
   position: absolute;
-  left: -7.5px;
-}
-
-.card--number--container::after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: black;
-  position: absolute;
-  right: -7.5px;
-}
-
-.card--number {
-  color: #fb6087;
-  font-size: 4rem;
 }
 
 .card--subtitle {
