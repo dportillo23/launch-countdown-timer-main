@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
 }
@@ -80,19 +78,25 @@ body {
         content: attr(data-value);
         width: 100%;
         height: 100%;
-        color: red;
+        color: white;
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
     }
 
     // &::after {
     //     content: attr(data-value);
     //     width: 100%;
     //     height: 100%;
-    //     color: blue;
+    //     color: white;
     //     position: absolute;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
     // }
 }
 
@@ -116,10 +120,10 @@ body {
 
     img {
         width: 100%;
-
+        
         position: absolute;
         z-index: 0;
-        bottom: 0;
+        bottom: 0;        
     }
 }
 
@@ -128,7 +132,7 @@ body {
     top: 2em;
     z-index: 1;
     font-size: 2rem;
-    color: $col-ppal;
+    color:$col-ppal;
 
     &:hover {
         color: $col-red;
@@ -137,11 +141,9 @@ body {
 
 // Footer
 
-.attribution {
+.attribution { 
     padding: 1.5em;
-    font-size: 12px;
-    text-align: center;
-
+    font-size: 12px; text-align: center; 
     a {
         color: hsl(228, 45%, 44%);
     }

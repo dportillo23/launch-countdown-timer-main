@@ -79,21 +79,24 @@ body {
     &::before {
         content: attr(data-value);
         width: 100%;
-        height: 100%;
+        height: 50%;
         color: red;
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    // &::after {
-    //     content: attr(data-value);
-    //     width: 100%;
-    //     height: 100%;
-    //     color: blue;
-    //     position: absolute;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    &::after {
+        content: attr(data-value);
+        width: 100%;
+        height: 100%;
+        color: blue;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .card--subtitle {

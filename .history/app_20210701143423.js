@@ -35,7 +35,6 @@ class Card {
         this.updateTimer();
         this.setDataAttribute();
         if (this.actualTime !== this.pastTime) {
-            console.log(this.actualTime, this.pastTime);
             this.flipCard()
         }
     }

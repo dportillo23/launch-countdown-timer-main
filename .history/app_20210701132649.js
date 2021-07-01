@@ -1,8 +1,3 @@
-// Functions
-// Function to make the difference between end and actual time
-function difference(endTime, startTime) {
-    return endTime - startTime;}
-
 //Change 60 for 00
 const sixtyToZero = num => {
     if (num == 60) {
@@ -32,29 +27,23 @@ class Card {
     setNewTimes(_time) {
         this.pastTime = this.actualTime;
         this.actualTime = sixtyToZero(addLeadingZero(_time));
-        this.updateTimer();
-        this.setDataAttribute();
+        this.updateTimer(this.actualTime);
         if (this.actualTime !== this.pastTime) {
-            console.log(this.actualTime, this.pastTime);
             this.flipCard()
         }
     }
 
-    updateTimer() {
-        this.card.innerHTML = this.actualTime;
+    updateTimer(_newTime) {
+        this.card.innerHTML = _newTime;
     }
 
     flipCard() {
         console.log("Flip Card " + this.card.id);
     }
-
-    setDataAttribute () {
-        this.card.setAttribute("data-value", this.actualTime)
-    }
 }
 
 
-// Constants
+// Constants and DOM objects
 const seconds = 1000;
 const minutes = seconds * 60;
 const hours = minutes * 60;
@@ -66,6 +55,11 @@ const hoursCard = new Card("hours", "00");
 const minutesCard = new Card("minutes", "00");
 const secondsCard = new Card("seconds", "00");
 
+
+// Functions
+function difference(endTime, startTime) {
+    return endTime - startTime;
+}
 
 // Set counter final day
 const finish = new Date();

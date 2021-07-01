@@ -32,24 +32,18 @@ class Card {
     setNewTimes(_time) {
         this.pastTime = this.actualTime;
         this.actualTime = sixtyToZero(addLeadingZero(_time));
-        this.updateTimer();
-        this.setDataAttribute();
+        this.updateTimer(this.actualTime);
         if (this.actualTime !== this.pastTime) {
-            console.log(this.actualTime, this.pastTime);
             this.flipCard()
         }
     }
 
-    updateTimer() {
-        this.card.innerHTML = this.actualTime;
+    updateTimer(_newTime) {
+        this.card.innerHTML = _newTime;
     }
 
     flipCard() {
         console.log("Flip Card " + this.card.id);
-    }
-
-    setDataAttribute () {
-        this.card.setAttribute("data-value", this.actualTime)
     }
 }
 
