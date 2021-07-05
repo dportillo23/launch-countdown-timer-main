@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Fontawesome connection -->
+  <script src="https://kit.fontawesome.com/22e099610c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+
+      <h1 class="title">We're launching soon</h1>
+
+      <!-- Cards Section -->
+      <div class="cards--section">
+        
+        <!-- Days card -->
+        <div class="cards--container">
+          <div class="card--number--container days" id="days">
+            <span class="days--top top--card">14</span>
+            <h1 class="card--title days--title">14</h1>
+            <span class="days--bottom bottom--card">14</span>
+          </div>
+          <h3 class="card--subtitle">Days</h3>
+        </div>
+
+        <!-- Hours card -->
+        <div class="cards--container">
+          <div class="card--number--container front  hours" id="hours">
+            <span class="hours--top top--card">00</span>
+            <h1 class="card--title hours--title">00</h1>
+            <span class="hours--bottom bottom--card">00</span>
+          </div>
+          <h3 class="card--subtitle">Hours</h3>
+        </div>
+
+        <!-- Minutes card -->
+        <div class="cards--container">
+          <div class="card--number--container  minutes" id="minutes">
+            <div class="minutes--top top--card activated"><span class="minutes--top--number">00</span></div>
+            <h1 class="card--title minutes--title">00</h1>
+            <div class="minutes--bottom bottom--card activated"><span class="minutes--bottom--number">00</span></div>
+          </div>
+          <h3 class="card--subtitle">Minutes</h3>
+        </div>
+
+        <!-- Seconds card -->
+        <div class="cards--container">
+          <div class="card--number--container seconds" data-value="" id="seconds">
+            <span class="seconds--top top--card">00</span>
+            <h1 class="card--title seconds--title">00</h1>
+            <span class="seconds--bottom bottom--card">00</span>
+          </div>
+          <h3 class="card--subtitle">Seconds</h3>
+        </div>
+      </div>
+
+      <!-- Social media icons section -->
+      <div class="social--container">
+        <img src="./images/pattern-hills.svg" alt="hills" srcset="">
+        <a href=""><i class="fab fa-facebook-square"></i></a></i><a href=""><i class="fab fa-pinterest"></i></a><a
+          href=""><i class="fab fa-instagram"></i></a></div>
+    </div>
+  </div>
+
+<!-- Footer -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://dportillo23.github.io/My-Personal-Site/">Daniel Portillo</a>.
+    </div>
+  </footer>
+
+  <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
