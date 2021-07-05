@@ -5,6 +5,36 @@ const hours = minutes * 60;
 const days = hours * 24;
 
 // Keyframes
+// const topKeyFrame = [
+//     {transform:  "rotateX(0deg)", zIndex: 2},
+//     {opacity: 0.99, offset: 0.01},
+//     {opacity: 0.99, offset: 0.99},
+//     {transform: "rotateX(-90deg)"}
+// ];
+
+// const topKeyOptions = {
+//     duration: 300,
+//     iterations: 1,
+//     easing: "cubic-beizer(.15, .45, .28, 1)",
+//     fill:  "both",
+//     queue: false,
+// }
+
+// const bottomKeyFrame = [
+//     {transform:  "rotateX(90deg)", zIndex: -1, opacity: 0},
+//     {transform:  "rotateX(90deg)", zIndex: -1, opacity: 0, offset: 0.50},
+//     {opacity: 0.99, offset: 0.51},
+//     {transform: "rotateX(0deg)", zIndex: 5}
+// ];
+
+// const bottomKeyOptions = {
+//     duration: 600,
+//     iterations: 1,
+//     easing: "cubic-beizer(.15, .45, .28, 1)",
+//     fill:  "both",
+//     queue: false,
+// }
+
 
 // Functions
 // Function to make the difference between end and actual time
@@ -13,7 +43,7 @@ function difference(endTime, startTime) {
 }
 
 //Change 60 for 00
-const sixtyToZero = num => {
+const sixtyToZero = (num: Number) => {
     if (num == 60) {
         num = "00"
     }
@@ -22,7 +52,7 @@ const sixtyToZero = num => {
 
 
 //  Function to add leading zeros if needed
-function addLeadingZero(num) {
+function addLeadingZero(num: Number) {
     if (num < 10) {
         num = "0" + num;
     }
@@ -55,7 +85,7 @@ class Card {
 
     updateTimer() {
         this.cardTitle.innerHTML = this.actualTime;
-        this.bottomCardTitle.innerHTML = this.pastTime
+        this.cardbottomCardTitle.innerHTML = this.pastTime
         this.bottomCardNumber.innerHTML = this.actualTime;
         this.topCardNumber.innerHTML = this.pastTime;
     }
@@ -69,6 +99,13 @@ class Card {
         this.topCard.classList.add("activated");
     }
 }
+
+// function updateAllTimer () {
+//     daysCard.updateTimer();
+//     hoursCard.updateTimer();
+//     minutesCard.updateTimer();
+//     secondsCard.updateTimer();
+// }
 
 
 // Create Card Objects
@@ -93,4 +130,6 @@ setInterval(() => {
     minutesCard.setNewTimes(Math.floor((timeDifference % hours) / minutes));
     secondsCard.setNewTimes((Math.floor((timeDifference % minutes) / seconds) + 1));
 
-}, 500);
+    // setTimeout(updateAllTimer, 999)
+
+}, 1000);
