@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+$col-ppal: hsl(237, 18%, 59%);
+$col-red: hsl(345, 95%, 68%);
+
+$col-dark: hsl(236, 21%, 26%);
+$col-dark-blue: hsl(235, 16%, 14%);
+$col-darker: hsl(234, 17%, 12%);
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    color: $col-ppal;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient($col-dark-blue, $col-dark);
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+    position: relative;
+    background: url('./images/bg-stars.svg');
+}
+
+.title {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+// Cards Secition
+
+.cards--section {
+    display: flex;
+    gap: 4em;
+    padding-bottom: 10em;
+}
+
+.cards--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card--number--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 2.25em;
+    height: 2.25em;
+    background-color: $col-dark;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px black;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    color: $col-red;
+    font-size: 4rem;
+
+    &::before {
+        content: attr(data-value);
+        width: 100%;
+        height: 50%;
+        color: red;
+        background-color: lightblue;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+    }
+
+    // &::after {
+    //     content: attr(data-value);
+    //     width: 100%;
+    //     height: 100%;
+    //     color: blue;
+    //     position: absolute;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: $col-darker;
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+
+    &.left {
+        left: -10px;
+    }
+
+    &.right {
+        right: -10px;
+    }
+}
+
+.card--subtitle {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 0.8em;
+}
+
+// Social media section
+
+.social--container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    // background: lightblue;
+
+    img {
+        width: 100%;
+
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+    }
+}
+
+.fab {
+    position: relative;
+    top: 2em;
+    z-index: 1;
+    font-size: 2rem;
+    color: $col-ppal;
+
+    &:hover {
+        color: $col-red;
+    }
+}
+
+// Footer
+
+.attribution {
+    padding: 1.5em;
+    font-size: 12px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
