@@ -5,9 +5,6 @@
     margin: 0;
 }
 
-$border-radius: 10px;
-$sm-border-radius: 2px;
-
 $col-ppal: hsl(237, 18%, 59%);
 $col-red: hsl(345, 95%, 68%);
 
@@ -44,8 +41,6 @@ body {
 .title {
     text-transform: uppercase;
     color: #fff;
-    font-size: 3vw;
-    text-align: center;
 }
 
 // Cards Secition
@@ -74,8 +69,8 @@ body {
     width: 2.25em;
     height: 2.25em;
     background-color: $col-dark;
-    border-radius: $border-radius;
-    box-shadow: 0 $border-radius 5px black;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px black;
     position: relative;
     transition: all 0.5s ease;
     color: $col-red;
@@ -107,7 +102,7 @@ body {
         opacity: 0;
         transform-origin: center bottom;
         transform-style: preserve-3d;
-        border-radius: $border-radius $border-radius 0 0;
+        border-radius: 10px 10px 0 0;
 
         &.activated {
             animation: top-card 0.25s cubic-bezier(.15,.45,.28,1);
@@ -154,7 +149,7 @@ body {
         transform-origin: center top;
         transform: rotateX(-90deg);
         opacity: 0;
-        border-radius: 0 0 $border-radius $border-radius;
+        border-radius: 0 0 10px 10px;
 
         &.activated {
             animation: bottom-card 0.5s cubic-bezier(.15,.45,.28,1);
@@ -201,7 +196,7 @@ body {
         z-index: 0;
         transform-style: preserve-3d;
         transform-origin: center top;
-        border-radius: 0 0 $border-radius $border-radius;
+        border-radius: 0 0 10px 10px;
         bottom: 0;
 
         span {
@@ -217,26 +212,26 @@ body {
 
     &::before {
         content: "";
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         background-color: $col-darker;
         position: absolute;
         z-index: 10;
-        left: -0.6rem;
+        left: -10px;
         top: 50%;
         transform: translateY(-50%)
     }
 
     &::after {
         content: "";
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         background-color: $col-darker;
         position: absolute;
         z-index: 10;
-        right: -0.6rem;
+        right: -10px;
         top: 50%;
         transform: translateY(-50%)
     }
@@ -294,5 +289,12 @@ body {
     }
 }
 
-@import "./mediaqueries";
+@media screen only and (max-width: 360px) {
+    html {
+        font-size: 2px;
+    }
 
+    .card--number--container {
+        font-size: 2rem;
+    }
+}

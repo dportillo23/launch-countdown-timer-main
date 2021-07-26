@@ -1,0 +1,70 @@
+@media (max-width: 370px) {
+
+
+    html {
+        font-size: 10px;
+    }
+
+    .container {
+        gap: 4em;
+    }
+
+    .cards--section {
+        gap: 1.3em;
+    }
+
+    .card--number--container {
+        font-size: 2rem;
+        box-shadow: 0 $sm-border-radius 2px black;
+        border-radius: $sm-border-radius;
+
+        .card--title {
+            font-size: 2rem;
+        }
+
+        .top--card {
+            border-radius: $sm-border-radius $sm-border-radius 0 0;
+            
+            span {
+                bottom: -1.3rem;
+            }
+        }
+    
+        .bottom--card {
+            border-radius: 0 0 $sm-border-radius $sm-border-radius;
+
+            span {
+                top: -1.3rem;
+            }
+        }
+
+        .bottom--card_2 {
+            border-radius: 0 0 $sm-border-radius $sm-border-radius;
+
+            span {
+                top: -1.3rem;
+            }
+        }
+
+        &::before,
+        &::after {
+            width: 0.7rem;
+            height: 0.7rem;
+        }
+
+        &::before {
+            left: -5px;
+        }
+
+        &::after {
+            right: -5px;
+        }
+    }
+
+    
+    
+    .cards--subtitle {
+        letter-spacing: 0.3em;
+        font-size: 0.5em;
+    }
+}

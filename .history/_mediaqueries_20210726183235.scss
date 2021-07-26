@@ -1,0 +1,51 @@
+@media (max-width: 370px) {
+
+
+    html {
+        font-size: 10px;
+    }
+
+    .container {
+        gap: 4em;
+    }
+
+    .cards--section {
+        gap: 2em;
+    }
+
+    .card--number--container {
+        font-size: 2rem;
+        box-shadow: 0 $sm-border-radius 2px black;
+
+        .card--title {
+            font-size: 2rem;
+        }
+
+        .top--card {
+            border-radius: $sm-border-radius $sm-border-radius 0 0;
+            
+            span {
+                bottom: -1;
+            }
+        }
+    
+        .bottom--card {
+            border-radius: 0 0 $sm-border-radius $sm-border-radius;
+        }
+
+        .bottom--card_2 {
+            border-radius: 0 0 $sm-border-radius $sm-border-radius;
+
+            span {
+                top: -1rem;
+            }
+        }
+    }
+
+    
+    
+    .cards--subtitle {
+        letter-spacing: 0.3em;
+        font-size: 0.5em;
+    }
+}

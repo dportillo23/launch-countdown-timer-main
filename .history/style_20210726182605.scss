@@ -6,7 +6,7 @@
 }
 
 $border-radius: 10px;
-$sm-border-radius: 2px;
+$sm-border-radius: 5px;
 
 $col-ppal: hsl(237, 18%, 59%);
 $col-red: hsl(345, 95%, 68%);
@@ -75,7 +75,7 @@ body {
     height: 2.25em;
     background-color: $col-dark;
     border-radius: $border-radius;
-    box-shadow: 0 $border-radius 5px black;
+    box-shadow: 0 $border-radius calc($border-radius/2) black;
     position: relative;
     transition: all 0.5s ease;
     color: $col-red;
@@ -223,7 +223,7 @@ body {
         background-color: $col-darker;
         position: absolute;
         z-index: 10;
-        left: -0.6rem;
+        left: -10px;
         top: 50%;
         transform: translateY(-50%)
     }
@@ -236,7 +236,7 @@ body {
         background-color: $col-darker;
         position: absolute;
         z-index: 10;
-        right: -0.6rem;
+        right: -10px;
         top: 50%;
         transform: translateY(-50%)
     }

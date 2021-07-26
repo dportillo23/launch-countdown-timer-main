@@ -223,7 +223,7 @@ body {
         background-color: $col-darker;
         position: absolute;
         z-index: 10;
-        left: -0.6rem;
+        left: -10px;
         top: 50%;
         transform: translateY(-50%)
     }
@@ -236,7 +236,7 @@ body {
         background-color: $col-darker;
         position: absolute;
         z-index: 10;
-        right: -0.6rem;
+        right: -10px;
         top: 50%;
         transform: translateY(-50%)
     }

@@ -1,0 +1,17 @@
+@media (max-width: 360px) {
+    html {
+        font-size: 9px;
+    }
+
+    .container {
+        gap: 2em;
+    }
+
+    .card--number--container {
+        font-size: 2rem;
+    }
+
+    .card--title {
+        font-size: 2rem;
+    }
+}
