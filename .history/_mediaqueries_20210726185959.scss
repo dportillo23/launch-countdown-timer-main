@@ -14,7 +14,7 @@
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .card--number--container {
@@ -71,19 +71,14 @@
     }
 
     .social--container {
-        max-width: 100vw;
-
+        height: 50%;
+        
         img {
-            height: 20%;
-            object-fit: cover;
+            width: 250%;
         }
 
         .fab {
             top: 6em;
         }
-    }
-
-    .attribution {
-        font-size: 8px;
     }
 }

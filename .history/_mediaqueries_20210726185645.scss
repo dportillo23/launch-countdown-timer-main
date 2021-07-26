@@ -13,10 +13,6 @@
         gap: 2.75em;
     }
 
-    .title {
-        font-size: 2rem;
-    }
-
     .card--number--container {
         font-size: 2rem;
         box-shadow: 0 $sm-border-radius 2px black;
@@ -71,19 +67,10 @@
     }
 
     .social--container {
-        max-width: 100vw;
-
+        height: 200%;
+        
         img {
-            height: 20%;
-            object-fit: cover;
+            width: 200%;
         }
-
-        .fab {
-            top: 6em;
-        }
-    }
-
-    .attribution {
-        font-size: 8px;
     }
 }

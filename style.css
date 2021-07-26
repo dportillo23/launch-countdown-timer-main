@@ -54,7 +54,7 @@ body {
 .title {
   text-transform: uppercase;
   color: #fff;
-  font-size: 3vw;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -357,7 +357,7 @@ body {
 
 .fab {
   position: relative;
-  top: 2em;
+  top: 1.5em;
   z-index: 1;
   font-size: 2rem;
   color: #8486a9;
@@ -386,6 +386,9 @@ body {
   }
   .cards--section {
     gap: 2.75em;
+  }
+  .title {
+    font-size: 2rem;
   }
   .card--number--container {
     font-size: 2rem;
@@ -427,6 +430,20 @@ body {
   }
   .card--subtitle {
     font-size: 0.7em;
+  }
+  .social--container {
+    max-width: 100vw;
+  }
+  .social--container img {
+    height: 20%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .social--container .fab {
+    top: 6em;
+  }
+  .attribution {
+    font-size: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
