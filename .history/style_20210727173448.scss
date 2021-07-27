@@ -49,10 +49,9 @@ body {
 }
 
 .title {
-    margin-top: 6rem;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     letter-spacing: 0.5rem;
 }
@@ -103,7 +102,7 @@ body {
     }
 
     .top--card {
-        background-color: $col-dark;
+        background-color: $col-darker;
         overflow: hidden;
         width: 100%;
         height: 50%;

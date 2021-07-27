@@ -1,6 +1,6 @@
-@media (max-width: 640px) {
+@media (max-width: 370px) {
 
-    $sm-height-span: -1.7rem;
+    $sm-height-span: -1.5rem;
 
     html {
         font-size: 10px;
@@ -28,6 +28,7 @@
         overflow: hidden;
 
         .card--title {
+            height: 60%;
             font-size: 2.25rem;
         }
 

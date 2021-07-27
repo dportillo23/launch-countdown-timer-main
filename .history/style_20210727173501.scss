@@ -49,10 +49,9 @@ body {
 }
 
 .title {
-    margin-top: 6rem;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     letter-spacing: 0.5rem;
 }
@@ -82,7 +81,7 @@ body {
     padding: 0;
     width: 9rem;
     height: 9rem;
-    background-color: $col-dark;
+    background-color: $col-dark-blue;
     border-radius: $border-radius;
     box-shadow: 0 $border-radius 5px black;
     position: relative;

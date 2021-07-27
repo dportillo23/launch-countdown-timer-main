@@ -5,8 +5,6 @@
     margin: 0;
 }
 
-$height-span: -3.4rem;
-
 $border-radius: 10px;
 $sm-border-radius: 2px;
 
@@ -19,7 +17,7 @@ $col-dark: hsl(236, 21%, 26%);
 $col-dark-blue: hsl(235, 16%, 14%);
 $col-darker: hsl(234, 17%, 12%);
 
-$circle-size: 0.75rem;
+$circle-size: 0.7rem;
 
 body {
     font-family: 'Red Hat Text', sans-serif;
@@ -32,8 +30,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $col-darker;
-    // background: linear-gradient($col-dark-blue, $col-dark);
+    background: linear-gradient($col-dark-blue, $col-dark);
 }
 
 .container {
@@ -49,12 +46,10 @@ body {
 }
 
 .title {
-    margin-top: 6rem;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 4rem;
     text-align: center;
-    letter-spacing: 0.5rem;
 }
 
 // Cards Secition
@@ -80,20 +75,20 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-    width: 9rem;
-    height: 9rem;
+    width: 2.25em;
+    height: 2.25em;
     background-color: $col-dark;
     border-radius: $border-radius;
     box-shadow: 0 $border-radius 5px black;
     position: relative;
     transition: all 0.5s ease;
     color: $col-red;
-    font-size: 5rem;
+    font-size: 4rem;
     perspective: 400px;
 
     .card--title {
-        height: 75%;
-        font-size: 5rem;
+        height: 55%;
+        font-size: 4rem;
         position: absolute;
         overflow: hidden;
 
@@ -141,7 +136,7 @@ body {
             color: $col-red;
             text-align: center;
             position: absolute;
-            bottom: $height-span;
+            bottom: -2.6rem;
             transform-style: preserve-3d;
 
 
@@ -173,7 +168,7 @@ body {
         span {
             color: $col-red;
             position: absolute;
-            top: $height-span;
+            top: -2.6rem;
             text-align: center;
             transform-style: preserve-3d;
          
@@ -216,7 +211,7 @@ body {
         span {
             color: $col-red;
             position: absolute;
-            top: $height-span;
+            top: -2.6rem;
             text-align: center;
             transform-style: preserve-3d;
          
@@ -281,7 +276,7 @@ body {
 
 .fab {
     position: relative;
-    top: 0.5em;
+    top: 1em;
     z-index: 1;
     font-size: 2rem;
     color: $col-ppal;

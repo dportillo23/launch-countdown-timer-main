@@ -1,6 +1,5 @@
-@media (max-width: 640px) {
+@media (max-width: 370px) {
 
-    $sm-height-span: -1.7rem;
 
     html {
         font-size: 10px;
@@ -15,35 +14,34 @@
     }
 
     .title {
-        width: 80%;
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .card--number--container {
         width: 4.5rem;
         height: 4.5rem;
-        font-size: 2.25rem;
+        font-size: 2rem;
         box-shadow: 0 $sm-border-radius 2px black;
         border-radius: $sm-border-radius;
         overflow: hidden;
 
         .card--title {
-            font-size: 2.25rem;
+            font-size: 2rem;
         }
 
         .top--card {
             border-radius: $sm-border-radius $sm-border-radius 0 0;
-
+            
             span {
-                bottom: $sm-height-span;
+                bottom: -1rem;
             }
         }
-
+    
         .bottom--card {
             border-radius: 0 0 $sm-border-radius $sm-border-radius;
 
             span {
-                top: $sm-height-span;
+                top: -1.3rem;
             }
         }
 
@@ -51,7 +49,7 @@
             border-radius: 0 0 $sm-border-radius $sm-border-radius;
 
             span {
-                top: $sm-height-span;
+                top: -1.3rem;
             }
         }
 
@@ -69,7 +67,7 @@
             right: -0.35rem;
         }
     }
-
+    
     .card--subtitle {
         font-size: 0.7em;
     }

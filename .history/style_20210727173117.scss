@@ -19,11 +19,11 @@ $col-dark: hsl(236, 21%, 26%);
 $col-dark-blue: hsl(235, 16%, 14%);
 $col-darker: hsl(234, 17%, 12%);
 
-$circle-size: 0.75rem;
+$circle-size: 0.7rem;
 
 body {
     font-family: 'Red Hat Text', sans-serif;
-    color: $col-ppal;
+    color: $col-dark;
 }
 
 .header {
@@ -32,8 +32,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $col-darker;
-    // background: linear-gradient($col-dark-blue, $col-dark);
+    background: linear-gradient($col-dark-blue, $col-dark);
 }
 
 .container {
@@ -49,10 +48,9 @@ body {
 }
 
 .title {
-    margin-top: 6rem;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     letter-spacing: 0.5rem;
 }
